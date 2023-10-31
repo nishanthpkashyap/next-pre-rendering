@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-   <div>
-    <h1>Hello World</h1>
+   <div className="flex items-center justify-center">
+    <h1>NextJS Pre-rendering</h1>
    </div>
   )
 }
