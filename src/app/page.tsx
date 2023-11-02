@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-   <div className="flex items-center justify-center">
+   <div className="flex items-center justify-center flex-col gap-[20px]">
     <h1>NextJS Pre-rendering</h1>
+    <Link href="/users">Users</Link>
    </div>
   )
 }
