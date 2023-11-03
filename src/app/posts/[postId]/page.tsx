@@ -15,3 +15,7 @@ async function getPost(postId: string){
     const data = await response.json();
     return data;
 }
+
+export async function generateStaticParams(){
+    return [{productId: '1'}, {productId: '2'}, {productId: '3'}];
+}
