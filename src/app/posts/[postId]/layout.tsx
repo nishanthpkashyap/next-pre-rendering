@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 export default function PostLayout({ children }: { children: ReactNode }) {
     return (
         <>
-            <Link href={"/posts"}>{`<- Go Back asasa`} </Link>
+            <Link href={"/posts"}>{`<- Go Back`} </Link>
             {children}
         </>
     )
