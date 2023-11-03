@@ -5,6 +5,8 @@ export default function Home() {
    <div className="flex items-center justify-center flex-col gap-[20px]">
     <h1>NextJS Pre-rendering</h1>
     <Link href="/users">Users</Link>
+    <Link href="/posts">Posts</Link>
+    <Link href="/products">Products</Link>
    </div>
   )
 }
