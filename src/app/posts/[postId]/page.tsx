@@ -17,5 +17,5 @@ async function getPost(postId: string){
 }
 
 export async function generateStaticParams(){
-    return [{productId: '1'}, {productId: '2'}, {productId: '3'}];
+    return [{postId: '1'}, {postId: '2'}, {postId: '3'}];
 }
