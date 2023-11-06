@@ -23,5 +23,6 @@ export default async function Posts(){
 async function getPosts(n: number){
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await response.json();
-    return data.slice(0, n);
+    // return data.slice(0, n);
+    return data
 }

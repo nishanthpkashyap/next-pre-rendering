@@ -17,5 +17,13 @@ async function getPost(postId: string){
 }
 
 export async function generateStaticParams(){
-    return [{postId: '1'}, {postId: '2'}, {postId: '3'}];
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+    const posts = await response.json();
+    const paramList = posts.map((post: any)=>{
+        return {postId: `${post.id}`}
+    })
+
+    // return [{postId: '1'}, {postId: '2'}, {postId: '3'},];
+    return paramList;
+
 }
